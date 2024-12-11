@@ -1,0 +1,16 @@
+.my-sider{
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  .logoCloseIcon{
+    width: 75px;
+    height: auto;
+  }
+  .logoIcon{
+    height: 65px;
+  }
+}

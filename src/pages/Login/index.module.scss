@@ -1,0 +1,151 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: #FFF;
+
+  input {
+    background: rgba(255, 255, 255, 0) !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+    box-shadow: inset 0 0 0 1000px #FFFFFF !important;
+  }
+  input:-internal-autofill-previewed,
+  input:-internal-autofill-selected {
+    -webkit-text-fill-color: #333 !important; // 可加可不加
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+  .warp {
+    width: 1120px;
+    margin: 0 auto;
+
+    .content-warp {
+      position: relative;
+      height: calc(100vh - 52px);
+
+      .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        width: 1120px;
+        height: 550px;
+        margin: 0 auto;
+
+        .left {
+          width: 50%;
+
+          > img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: 0 auto;
+          }
+        }
+
+        .right {
+          position: relative;
+          width: 50%;
+          background: #fff;
+          border-radius: 10px;
+
+          .right-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+
+            .logo {
+              display: flex;
+              align-items: baseline;
+              justify-content: space-between;
+              font-size: 18px;
+              font-weight: 500;
+              margin-bottom: 15px;
+
+              > img {
+                display: block;
+                object-fit: contain;
+                width: 250px;
+              }
+
+              .welcome {
+                text-align: left;
+                line-height: 10px;
+                color: #000000;
+              }
+            }
+
+            .login-content {
+              padding-top: 15px;
+              &.login-content-border{
+                border-top: 1px solid #999;
+              }
+              .rapidly-enter {
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                .rapidly-title {
+                  font-size: 14px;
+                  color: #000000;
+                  text-align: left;
+                  width: 100%;
+                }
+
+                .rapidly-head-portrait {
+                  margin-top:40px;
+                }
+
+                .rapidly-userName {
+                  font-size: 16px;
+                  text-align: center;
+                  font-weight: 500;
+                  color: #000000;
+                  width: 100%;
+                }
+
+                .rapidly-enter {
+                  width: 100%;
+                  margin-top: 40px;
+                }
+
+                .rapidly-other {
+                  font-size: 13px;
+                  color: #666;
+                  text-align: left;
+                  width: 100%;
+                  margin-top: 10px;
+                  cursor: pointer;
+                }
+              }
+
+              .form-warp {
+                .icon {
+                  display: inline-block;
+                  width: 16px;
+                  height: 16px;
+                  background-size: 100% 100%;
+
+                  &.userIcon {
+                    background-image: url('https://filecdn.ailecheng.com/20230613/527b395a833f194144923ab4ce5dc2eb.png');
+                  }
+
+                  &.passwordIcon {
+                    background-image: url('https://filecdn.ailecheng.com/20230613/eb1a950e3871e0ad6239849b9955a5b6.png');
+                  }
+                }
+              }
+
+              .login-btn {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
